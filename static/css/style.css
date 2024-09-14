@@ -8,9 +8,11 @@
 .form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background-image:  url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOwAAACxCAMAAADwHaEPAAAAMFBMVEX7zJj7y5r6y5f9y5b7zJb+z5v7zZv4zpz4ypj4zp7/37H0zJv7yZb+zp38ypX/zpmPSb3iAAABWUlEQVR4nO3Y7WrCMACG0fQrWuf0/u92TqY4JKAyGL45z8+EhB6aQmjZreumLvvleGpZal3C+ryp7D7O2OM0zXMptZZGl8Wt8db8s/u9Wmu/4acrdlv20+Ewz+O43Y6NLotb4635Z/d7tdZ+w00PY9+1e+zpGPfzZh/4Zt81WMc4IFjYgGBhA4KFDQgWNiBY2IBgYQOChQ0Ith9s2U+wAcHCBgQLG1DnlwrYjGBhA4KFDQgWNiBY2IBgYQOChQ0IFjage2xXP8lhM4KFDQi2H2xXlwrYjGBhA4KFDQgWNiBY2IBgYQOChQ0IFjYgWNiAYGEDgoUNCBY2IFjYgGBhA4KFDQgWNiBY2IBgYQOChQ0IFjYgWNiAYGEDgoUNCBY2IFjYgGBhA4KFDQgWNiBY2IBgYQOChQ0IFjYgWNiAYGED6hxbxyt2+O+n++N+Y9czdvmeqHWzqcF9AbYAXxlYEQOkAAAAAElFTkSuQmCC);
+  background-size: 1000px 452px;
+  background: linear-gradient(to bottom right, #4285B4, 	#FFDEAD);
+  background-position: right;
   max-width: 360px;
-  margin: 0 auto 100px;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -18,7 +20,9 @@
 .form input {
   font-family: "Roboto", sans-serif;
   outline: 0;
-  background: #f2f2f2;
+  background-image:  url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOwAAACxCAMAAADwHaEPAAAAMFBMVEX7zJj7y5r6y5f9y5b7zJb+z5v7zZv4zpz4ypj4zp7/37H0zJv7yZb+zp38ypX/zpmPSb3iAAABWUlEQVR4nO3Y7WrCMACG0fQrWuf0/u92TqY4JKAyGL45z8+EhB6aQmjZreumLvvleGpZal3C+ryp7D7O2OM0zXMptZZGl8Wt8db8s/u9Wmu/4acrdlv20+Ewz+O43Y6NLotb4635Z/d7tdZ+w00PY9+1e+zpGPfzZh/4Zt81WMc4IFjYgGBhA4KFDQgWNiBY2IBgYQOChQ0Ith9s2U+wAcHCBgQLG1DnlwrYjGBhA4KFDQgWNiBY2IBgYQOChQ0IFjage2xXP8lhM4KFDQi2H2xXlwrYjGBhA4KFDQgWNiBY2IBgYQOChQ0IFjYgWNiAYGEDgoUNCBY2IFjYgGBhA4KFDQgWNiBY2IBgYQOChQ0IFjYgWNiAYGEDgoUNCBY2IFjYgGBhA4KFDQgWNiBY2IBgYQOChQ0IFjYgWNiAYGED6hxbxyt2+O+n++N+Y9czdvmeqHWzqcF9AbYAXxlYEQOkAAAAAElFTkSuQmCC);
+  background-size: 400px 600px;
+  background: linear-gradient(to bottom right, #4285B4, 	#ffe8c6);
   width: 100%;
   border: 0;
   margin: 0 0 15px;
@@ -41,11 +45,11 @@
   cursor: pointer;
 }
 .form .button:hover,.form .button:active,.form .button:focus {
-  background: #757575;
+  background: #7b7b7b;
 }
 .form .message {
   margin: 15px 0 0;
-  color: #b3b3b3;
+  color: #ff0000;
   font-size: 12px;
 }
 .form .message a {
@@ -90,9 +94,160 @@
 }
 body {
   background: #1d1d1d; /* fallback for old browsers */
-  background: rgb(26, 26, 26);
-  background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);
+  background: rgb(255, 255, 255);
+  background: url(https://www.state.gov/wp-content/uploads/2020/11/shutterstock_186964970-scaled.jpg) 50%;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
+}
+
+*
+{
+  margin:0;
+  box-sizing:border-box;
+  padding:0
+}
+
+body
+{
+  
+  
+  background-image: 30% url(https://www.state.gov/wp-content/uploads/2020/11/shutterstock_186964970-scaled.jpg);
+  background-repeat:no-repeat;
+  background-size:2560px 1707px;
+  background-attachment:fixed
+  
+  
+}
+
+h1
+{
+  color:#FFF;
+  text-align:center;
+  text-transform:uppercase;
+  padding:20px;
+  font-family: 'Source Sans Pro', sans-serif;
+
+
+}
+
+p
+{
+  color:#eee;
+  text-align:center;  font-family: 'Titillium Web', sans-serif;
+font-size:17px
+
+  
+}
+
+div
+{
+  width:420px;
+  height:450px;
+  background:rgba(0,0,0,.6);
+  margin:50px auto
+}
+
+div p
+{
+  font-size:17px;
+  padding:30px
+}
+
+input[name='go']
+{
+  margin-left:60px;
+  height:15px;
+  width:15px;
+  background-color:transparent;
+  
+}
+
+
+span
+{
+  color:#FFF;
+  font-size:16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+}
+
+input[name='come']
+{
+  width:80%;
+  margin:25px auto;
+  display:block;
+  padding:10px;
+  border-radius:20px;
+  border:none;
+  outline:0;
+  
+  
+  
+  
+  
+}
+
+
+
+.cal
+{
+  position:relative;
+  
+}
+
+.cal:before
+{
+  content:"\f073";
+  position:absolute;
+  font-family:'FontAwesome';
+  top:11px;
+  left:349px;
+  z-index:1;
+  color:#000;
+  font-size:14px
+  
+  
+  
+}
+
+
+select
+{
+  height:30px;
+  width:150px;
+  border-radius:10px;
+  border:0;
+  outline:0;
+  margin:20px 0 0 38px;
+  padding:5px;
+  
+  
+}
+
+input[type='submit']
+{
+  width:80%;
+  margin:30px auto;
+  display:block;
+  border-radius:10px;
+  border:0;
+  outline:0;
+  height:35px;
+  background:#27aa9d;
+  color:#FFF
+}
+
+p:last-child
+{
+  font-size:16px;
+  padding-bottom:30px
+}
+
+
+.opy
+{
+  font-size:20px;
+  background:red;
+  
 }
