@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Сайт</title>
+</head>
+
+<body>
+    {% for user in obj %}
+        <p>
+            {% for element in user %}
+            <span>
+                {{element}}
+            </span>
+            {% endfor %}
+        </p>
+    {% endfor %}
+</body>
+
+</html>
