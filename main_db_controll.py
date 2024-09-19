@@ -15,23 +15,23 @@ class DB_Controller:
     def init_table(self):
         self.open()
         self.cursor.execute(
-            '''CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, 
-            first_name TEXT, last_name TEXT, date TEXT)''')
+            '''CREATE TABLE IF NOT EXISTS ticket (id INTEGER PRIMARY KEY AUTOINCREMENT, 
+            by TEXT, name TEXT, date TEXT, city TEXT, class TEXT, adult TEXT, children TEXT)''')
         self.close()
 
     def get_data(self):
         self.open()
         self.cursor.execute(
-            '''SELECT * FROM users'''
+            '''SELECT * FROM ticket'''
             )
         data = self.cursor.fetchall()
         self.close()
         return data
     
-    def add_data(self, obj):
+    def add_data(self, data):
+        print(data)
         self.open()
-        
-        self.cursor.execute('''INSERT INTO users (first_name, last_name, date) VALUES (?, ?, ?)''', (obj['first_name'], obj['last_name'], obj['date']))
+        self.cursor.execute('''INSERT INTO ticket (by, name, date, city, class, adult, children) VALUES (?, ?, ?, ?, ?, ?, ?)''', data)
         self.conn.commit()
         self.close()
 

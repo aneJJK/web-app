@@ -140,7 +140,7 @@ font-size:17px
   
 }
 
-div
+form
 {
   width:420px;
   height:450px;
@@ -148,13 +148,13 @@ div
   margin:50px auto
 }
 
-div p
+form p
 {
   font-size:17px;
   padding:30px
 }
 
-input[name='go']
+input[name='by']
 {
   margin-left:60px;
   height:15px;
@@ -172,7 +172,8 @@ span
   
 }
 
-input[name='come']
+input[name='name'],
+input[name='date']
 {
   width:80%;
   margin:25px auto;
@@ -181,36 +182,7 @@ input[name='come']
   border-radius:20px;
   border:none;
   outline:0;
-  
-  
-  
-  
-  
 }
-
-
-
-.cal
-{
-  position:relative;
-  
-}
-
-.cal:before
-{
-  content:"\f073";
-  position:absolute;
-  font-family:'FontAwesome';
-  top:11px;
-  left:349px;
-  z-index:1;
-  color:#000;
-  font-size:14px
-  
-  
-  
-}
-
 
 select
 {
@@ -238,16 +210,14 @@ input[type='submit']
   color:#FFF
 }
 
+input[type='submit']:hover
+{
+  background:#1f877d;
+  cursor: pointer;
+}
+
 p:last-child
 {
   font-size:16px;
   padding-bottom:30px
-}
-
-
-.opy
-{
-  font-size:20px;
-  background:red;
-  
 }

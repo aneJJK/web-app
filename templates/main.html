@@ -2,34 +2,42 @@
 <html>
 
 <head>
-    <title>Сайт</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+  <title>Сайт</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
 </head>
 
 <body>
-    <h1>book my trip</h1>
-    <p>Lorem ipsum dolar sit emit Lorem ipsum dolar sit emit</p>
-    <div>
-    
-    <p>offers a quick nd easy way to book tickets online</p>
-      
-     <input type="radio" name="go"> <span>Flight</span>
-      <input type="radio" name="go" checked> <span>Train</span>
-      <input type="radio" name="go"> <span>Bus</span>
-      <input type="text" placeholder="Your Name" name='come'>
-      <span class='cal'>
-      <input type="text" placeholder="Date" name='come'>
-    </span>
-      <select><option class='opy'>Destination City</option></select>
-      <select><option>Select Class</option></select>
-       <select><option>Adults</option></select>
-      <select><option>Children</option></select>
-      <input type='submit' value='Submit'>
-    
-    </div>
-     
-    
-    
+  <h1>book my trip</h1>
+  <p>Lorem ipsum dolar sit emit Lorem ipsum dolar sit emit</p>
+  <form method="post" enctype="multipart/form-data" action="/result">
+
+    <p>Offers a quick nd easy way to book tickets online</p>
+
+    <input type="radio" name="by" value="Flight"> <span>Flight</span>
+    <input type="radio" name="by" value="Train" checked> <span>Train</span>
+    <input type="radio" name="by" value="Bus"> <span>Bus</span>
+    <input type="text" placeholder="Your Name" name='name'>
+    <input type="date" placeholder="Date" name='date'>
+    <select name="city">
+      <option>Dnipro</option>
+      <option>Kharkiv</option>
+    </select>
+    <select name="class">
+      <option>First Class</option>
+      <option>Second Class</option>
+    </select>
+    <select name="adult">
+      <option>Adults</option>
+    </select>
+    <select name="children">
+      <option>Children</option>
+    </select>
+    <input type='submit' value='Submit'>
+
+  </form>
+
+
+
 </body>
 
 </html>
