@@ -16,7 +16,7 @@ class DB_Controller:
         self.open()
         self.cursor.execute(
             '''CREATE TABLE IF NOT EXISTS ticket (id INTEGER PRIMARY KEY AUTOINCREMENT, 
-            by TEXT, name TEXT, date TEXT, city TEXT, class TEXT, adult TEXT, children TEXT)''')
+            by TEXT, first_name TEXT, last_name TEXT, date TEXT, city TEXT, class TEXT, adult TEXT, children TEXT)''')
         self.close()
 
     def get_data(self):
@@ -31,7 +31,7 @@ class DB_Controller:
     def add_data(self, data):
         print(data)
         self.open()
-        self.cursor.execute('''INSERT INTO ticket (by, name, date, city, class, adult, children) VALUES (?, ?, ?, ?, ?, ?, ?)''', data)
+        self.cursor.execute('''INSERT INTO ticket (by, first_name, last_name, date, city, class, adult, children) VALUES (?, ?, ?, ?, ?, ?, ?, ?)''', data)
         self.conn.commit()
         self.close()
 
